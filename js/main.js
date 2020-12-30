@@ -1,5 +1,5 @@
 function smoothScroll () {
-    $('#main-header a').on('click', function (e){
+    $('#main-header a, a.btn').on('click', function (e){
         if(this.hash !== ''){
             e.preventDefault();
 
