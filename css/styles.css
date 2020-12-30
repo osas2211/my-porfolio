@@ -254,6 +254,9 @@ section#home{
 }
 
 @media (max-width:718px){
+    #main-header li{
+        padding-left: 1.3rem;
+    }
     .intro-img{
         display: none;
     }
