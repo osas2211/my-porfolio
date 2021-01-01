@@ -38,10 +38,12 @@ if (this.hash !== 'about'){
 function openSideMenu(){
     document.getElementById('mobile').style.width = '90%';
     document.getElementById('main').style.filter = 'blur(5px)';
+    document.querySelector('#main-header .side-bar').style.display = 'none'
     
 };
 
 function closeSideMenu(){
     document.getElementById('mobile').style.width = '0';
     document.getElementById('main').style.filter = 'none';
+    document.querySelector('#main-header .side-bar').style.display = 'block'
 };
