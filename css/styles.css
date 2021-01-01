@@ -241,7 +241,10 @@ section#home{
     
 }
 .about-content{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     grid-template-columns: repeat(auto-fill,32rem);
     grid-auto-rows: 550px;
     grid-gap: 5rem;
@@ -249,11 +252,13 @@ section#home{
     color: #b6b3b3;
 }
 
-
+.about-text{
+    width: 35rem;
+}
 
 .about-photo{
     -background-color: black;
-    width: 80%;
+    width: 25rem;
     height: 80%;
     border-radius: 10px;
     box-shadow: 0 12px 12px rgb(0,0,0, 1);
