@@ -245,24 +245,22 @@ section#home{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fill,32rem);
-    grid-auto-rows: 550px;
-    grid-gap: 5rem;
     margin-bottom: 15rem;
     color: #b6b3b3;
 }
 
 .about-text{
-    max-width: 35rem;
+    -max-width: 35rem;
 }
 
 .about-photo{
     -background-color: black;
-    max-width: 28rem;
+    max-width: 50%;
     height: 80%;
     border-radius: 10px;
     box-shadow: 0 12px 12px rgb(0,0,0, 1);
     transition: 1.5s ease-out;
+    margin-top: 2rem;
 }
 
 
@@ -380,8 +378,14 @@ section#home{
     }
 }
 
-@media (max-width:1250px){
+@media (min-width:992px){
     .about-content{
-        grid-template-columns: repeat(2,1fr);
-    }    
+        justify-content: space-between;
+    }
+    .about-photo{
+        max-width: 40%;
+    }
+    .about-text{
+        max-width: 50%;
+    }
 }
