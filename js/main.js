@@ -1,5 +1,5 @@
 function smoothScroll () {
-    $('#main-header a, a.btn').on('click', function (e){
+    $('#main-header a, a.btn, #mobile a').on('click', function (e){
         if(this.hash !== ''){
             e.preventDefault();
 
@@ -32,4 +32,14 @@ if (this.hash !== 'about'){
     active[1].addEventListener('click', ()=>{
         aboutPhoto.style.transform = 'rotate(360deg)'
     });
-}
+};
+
+
+function openSideMenu(){
+    document.getElementById('mobile').style.width = '90%';
+    
+};
+
+function closeSideMenu(){
+    document.getElementById('mobile').style.width = '0';
+};
