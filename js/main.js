@@ -37,9 +37,11 @@ if (this.hash !== 'about'){
 
 function openSideMenu(){
     document.getElementById('mobile').style.width = '90%';
+    document.getElementById('main').style.filter = 'blur(5px)';
     
 };
 
 function closeSideMenu(){
     document.getElementById('mobile').style.width = '0';
+    document.getElementById('main').style.filter = 'none';
 };
