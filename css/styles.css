@@ -242,7 +242,8 @@ section#home{
 }
 .about-content{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fill,32rem);
+    grid-auto-rows: 550px;
     grid-gap: 5rem;
     margin-bottom: 15rem;
     color: #b6b3b3;
@@ -253,7 +254,7 @@ section#home{
 .about-photo{
     -background-color: black;
     width: 80%;
-    height: 90%;
+    height: 80%;
     border-radius: 10px;
     box-shadow: 0 12px 12px rgb(0,0,0, 1);
     transition: 1.5s ease-out;
@@ -368,4 +369,10 @@ section#home{
     .abt-me-top hr{
         width: 15rem;
     }
+}
+
+@media (max-width:1250px){
+    .about-content{
+        grid-template-columns: repeat(2,1fr);
+    }    
 }
