@@ -320,6 +320,9 @@ section#home{
 }
 
 @media (max-width:718px){
+    #home {
+        height: 100vh;
+    }
     #main-header{
         padding: 1.6rem;
     }
