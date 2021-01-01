@@ -321,7 +321,7 @@ section#home{
 
 @media (max-width:718px){
     section#home{
-        min-height: 100vh;
+        min-height: 44rem;
     }
     #main-header{
         padding: 1.6rem;
@@ -358,7 +358,7 @@ section#home{
         flex-direction: column-reverse;
     }
     .about-text{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .abt-me-top h2{
         font-size: 1.5rem;
