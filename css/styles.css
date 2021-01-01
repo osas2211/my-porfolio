@@ -238,6 +238,7 @@ section#home{
     margin-left: 20px;
     color: #46CBAB;
     border: 1px solid #46CBAB;
+    transition: 2s linear;
     
 }
 .about-content{
