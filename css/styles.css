@@ -383,8 +383,8 @@ section#home{
         justify-content: space-between;
     }
     .about-photo{
-        max-width: 45%;
-        height: 90%;
+        max-width: 40%;
+        height: 80%;
     }
     .about-text{
         max-width: 50%;
