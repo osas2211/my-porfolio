@@ -1,15 +1,3 @@
-function smoothScroll () {
-    $('#main-header a, a.btn, #mobile a').on('click', function (e){
-        if(this.hash !== ''){
-            e.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top
-            }, 800)
-        }
-    });
-};
-
 const active = document.querySelectorAll('#main-header a');
 const aboutPhoto = document.querySelector('.about-photo');
 
@@ -26,15 +14,6 @@ function navBarSwitch() {
 };
 
 
-smoothScroll();
-navBarSwitch();
-if (this.hash !== 'about'){
-    active[1].addEventListener('click', ()=>{
-        aboutPhoto.style.transform = 'rotate(360deg)'
-    });
-};
-
-
 function openSideMenu(){
     document.getElementById('mobile').style.width = '90%';
     document.getElementById('main').style.filter = 'blur(5px)';
@@ -47,3 +26,6 @@ function closeSideMenu(){
     document.getElementById('main').style.filter = 'none';
     document.querySelector('#main-header .side-bar').style.display = 'block'
 };
+
+smoothScroll();
+navBarSwitch();
