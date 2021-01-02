@@ -291,7 +291,7 @@ section#home{
 .about-photo{
     -background-color: black;
     max-width: 50%;
-    height: 80%;
+    height: 25rem;
     border-radius: 10px;
     box-shadow: 0 12px 12px rgb(0,0,0, 1);
     transition: 1.5s ease-out;
@@ -353,6 +353,7 @@ section#home{
     line-height: 12px;
 }
 .about-text .btn{
+    margin-top: 1rem;
     background: linear-gradient(93.15deg, #46CBAB -14.96%, #42ebc3 105.35%);
 }
 .about-text .btn:hover{
@@ -444,9 +445,10 @@ section#home{
     }
     .about-photo{
         max-width: 40%;
-        height: 80%;
+        height: 24rem;
     }
     .about-text{
         max-width: 50%;
     }
 }
+
