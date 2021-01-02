@@ -46,6 +46,22 @@ body{
     -box-shadow: 4px 20px 20px rgba(0, 0, 0, 0.33);
     background: linear-gradient(93.15deg, #6A8CC0 -14.96%, #6f86ac 105.35%);;
 }
+hr{
+    color: #46CBAB;
+    border: 1px solid #46CBAB;
+}
+
+.side-border {
+    background-image: linear-gradient(#46CBAB, #46CBAB),
+                      linear-gradient(#46CBAB, #46CBAB),
+                      linear-gradient(#46CBAB, #46CBAB),
+                      linear-gradient(#46CBAB, #46CBAB);
+    background-repeat: no-repeat;
+    background-size: 1px 30%, 10% 1px, 1px 30%, 10% 1px, calc(100% - 4px) calc(100% - 4px);
+    background-position: left bottom, left bottom, right top, right top, 4px 4px;
+    transition: 500ms ease-in-out;
+    
+}
 
 /*
     ==========================================
@@ -108,13 +124,7 @@ body{
     display: none;
 }
 
-#main-header .side-bar{
-    position: absolute;
-    top: 0.5rem;
-    right: 2rem;
-    font-size: 2rem;
-    display: none;
-}
+
 
 /*
     ==========================================
@@ -126,6 +136,18 @@ body{
 #main {
     overflow: hidden;
     
+}
+
+#main-header .side-bar {
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    display: none;
+}
+
+#main-header .side-bar i{
+    display: none;
 }
 
 .mobile-menu{
@@ -140,7 +162,7 @@ body{
     padding-top: 4rem;
     overflow-x: hidden;
     transition: 0.5s;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     
@@ -280,7 +302,7 @@ section#home{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15rem;
+    margin-bottom: 7rem;
     color: #b6b3b3;
 }
 
@@ -369,6 +391,85 @@ section#home{
 */
 
 
+#portfolio{
+    background-color: var(--theme-color);
+    color: #ffffff;
+}
+
+#portfolio .portfolio-head{
+    margin-top: 7rem;
+    -margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Orbitron','Texturina','Playfair Display','Raleway','Langar',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+
+}
+
+.portfolio-head h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    position: relative;
+    opacity: 0.8;
+    padding: 8px;
+
+}
+
+
+
+.project-section > ul{
+    margin-top: 2rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Play','Texturina','Playfair Display','Raleway','Langar',Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+
+}
+
+.project-section li:nth-child(2){
+    padding-left: 2.3rem;
+}
+
+.project-section a{
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.2rem;
+    opacity: 0.95;
+    transition: 300ms ease-in-out;
+}
+
+.project-section a:hover{
+    transform: translateY(-10px);
+    border-bottom: 1px solid #46CBAB;
+}
+
+.active-border{
+    border-bottom: 1px solid #46CBAB;
+    transition: 1.5s ease-out;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    min-width: 3rem;
+    min-height: 40rem;
+    transition: 500ms ease-out;
+}
+.projects div{
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 12px 12px rgb(0,0,0, 0.6);
+}
 
 
 /*
@@ -406,6 +507,12 @@ section#home{
     #main-header .side-bar{
         display: block;
     }
+    #main-header .side-bar i{
+        display: inline;
+    }
+    .mobile-menu{
+        display: flex;
+    }
     .intro-img{
         display: none;
     }
@@ -437,6 +544,16 @@ section#home{
     .abt-me-top hr{
         width: 15rem;
     }
+    .projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projects div{
+        min-height: 20rem;
+        min-width: 20rem;
+    }
 }
 
 @media (min-width:992px){
@@ -449,6 +566,10 @@ section#home{
     }
     .about-text{
         max-width: 50%;
+    }
+
+    #main-header .side-bar i{
+        display: none;
     }
 }
 
