@@ -618,6 +618,7 @@ section#home{
     }
     .about-photo{
         max-width: 20rem;
+        max-height: 20rem;
     }
     .abt-me-top h2{
         font-size: 1.5rem;
