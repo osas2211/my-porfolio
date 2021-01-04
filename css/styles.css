@@ -558,6 +558,122 @@ section#home{
                 CONTACT SECTION
     ==========================================
 */
+#contact{
+    background-color: var(--theme-color);
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: 'Play','Raleway','Langar',Arial, Helvetica, sans-serif;
+    
+}
+
+#contact .contact-head{
+    margin-top: 7rem;
+    -margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Orbitron','Texturina','Playfair Display','Raleway','Langar',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+
+}
+
+.contact-head h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    position: relative;
+    opacity: 0.8;
+    padding: 8px;
+
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgb(72,94,116, 0.6);
+    margin-top: 3rem;
+}
+.contact-wrapper > *{
+    padding: 1.3rem;
+}
+#contact ul{
+    padding: 0;
+    list-style: none;
+}
+.my-info{
+    background-color: #6A8CC0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.my-info h3, .my-info ul{
+    margin-bottom: 1rem;
+}
+.contact-me h3{
+    font-size: 1.3rem;
+}
+
+.contact-me{
+    background-color: #9fb5d4;
+}
+
+.contact-me form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.contact-me form label{
+    display: block;
+}
+
+.contact-me form input, .contact-me form textarea, .contact-me form button{
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    
+    
+}
+.contact-me form input:focus{
+    border: #46CBAB 1px solid;
+}
+
+
+.contact-me form button{
+    border: none;
+}
+.contact-me form p{
+    margin: 0;
+}
+
+.contact-me form .full{
+    grid-column: 1/3;
+}
+
+/*
+    ==========================================
+            FOOTER SECTION
+    ==========================================
+*/
+
+#main-footer{
+    background-color: var(--theme-color);
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Orbitron','Texturina','Playfair Display','Raleway','Langar',Arial, Helvetica, sans-serif;
+    word-spacing: 0.3rem;
+  
+}
+
+#main-footer a{
+    color: #46CBAB;
+    font-size: 1.4rem;
+}
+
+#main-footer hr{
+    width: 20%;
+    margin: auto;
+    margin-bottom: 0.2rem;
+}
 
 
 /*
@@ -653,6 +769,21 @@ section#home{
 
     #main-header .side-bar i{
         display: none;
+    }
+
+    
+}
+
+@media(min-width:700px){
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .my-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
